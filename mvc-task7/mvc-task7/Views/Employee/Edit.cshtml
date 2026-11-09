@@ -1,0 +1,16 @@
+@model mvc_task7.Models.Employee
+
+<form asp-action="Edit" method="post">
+    <input type="hidden" asp-for="Id" />
+  
+
+    <input type="text" asp-for="FullName" value="@Model.FullName" />
+    <input type="text" asp-for="Phone" value="@Model.Phone" />
+    <input type="email" asp-for="Email" value="@Model.Email" />
+    <input type="text" asp-for="Position" value="@Model.Position" />
+
+    <input type="number" step="any" asp-for="Salary" value="@Model.Salary" />
+    <input type="date" asp-for="HireDate" />
+
+    <button type="submit">Save</button>
+</form>

@@ -1,0 +1,15 @@
+﻿
+@model mvc_task7.Models.Product
+
+<form asp-action="Edit" method="post">
+    <input type="hidden" asp-for="Id" />
+
+    <input type="text" asp-for="Name" value="@Model.Name" />
+    <input type="text" asp-for="Description" value="@Model.Description" />
+    <input type="number" asp-for="Price" value="@Model.Price" step="any" />
+    <input type="number" asp-for="Quantity" value="@Model.Quantity" />
+    <input type="number" asp-for="CategoryID" value="@Model.CategoryID" />
+    <input type="number" asp-for="SupplierID" value="@Model.SupplierID" />
+
+    <button type="submit">Save</button>
+</form>

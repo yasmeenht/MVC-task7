@@ -1,0 +1,9 @@
+﻿@model mvc_task7.Models.Category
+
+<form asp-action="Edit" method="post">
+    <input type="text" asp-for="Id" hidden />
+    <input type="text" asp-for="Name" value="@Model.Name" />
+    <input type="text" asp-for="Description" value="@Model.Description" />
+
+    <button type="submit">Save Changes</button>
+</form>

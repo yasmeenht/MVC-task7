@@ -1,0 +1,12 @@
+﻿@model mvc_task7.Models.Supplier
+
+<form asp-action="Edit" method="post">
+  
+
+    <input type="text" asp-for="Name" value="@Model.Name" />
+    <input type="text" asp-for="Phone" value="@Model.Phone" />
+    <input type="email" asp-for="Email" value="@Model.Email" />
+    <input type="text" asp-for="Address" value="@Model.Address" />
+
+    <button type="submit">Save</button>
+</form>
